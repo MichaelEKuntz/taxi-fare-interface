@@ -3,6 +3,7 @@ const algoliaPlacesApiKey = '1131438afb49f60a48ed468c5af189b8';
 const mapboxApiToken = 'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJja2YzcmcyNDkwNXVpMnRtZGwxb2MzNWtvIn0.69leM_6Roh26Ju7Lqb2pwQ';
 const taxiFareApiUrl = 'https://dockertaxi-z445hp6leq-ew.a.run.app/predict/';
 
+
 const displayMap = (start, stop) => {
   mapboxgl.accessToken = mapboxApiToken;
   const map = new mapboxgl.Map({
@@ -222,3 +223,5 @@ pickupAutocomplete();
 dropoffAutocomplete();
 initFlatpickr();
 predict();
+
+
